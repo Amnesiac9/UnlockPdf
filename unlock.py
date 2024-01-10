@@ -2,6 +2,8 @@ import os
 import pikepdf
 import getpass
 
+print('Version 1.0.0')
+
 def unlock_pdf(filename, password):
     pdf = pikepdf.open(filename, password=password)
     pdf.save(filename.split('.pdf')[0] + '_unlocked.pdf')
